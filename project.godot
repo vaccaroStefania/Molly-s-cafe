@@ -11,8 +11,21 @@ config_version=5
 [application]
 
 config/name="Molly´s Cafe"
+run/main_scene="uid://co7whs7psekw7"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+
+[autoload]
+
+Globalxd="*uid://dhd0iwgbnkbae"
+
+[display]
+
+window/size/viewport_width=1100
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+mouse_cursor/custom_image="uid://b7t0vwt881tf2"
+mouse_cursor/custom_image_hotspot=Vector2(1, 1)
+mouse_cursor/tooltip_position_offset=Vector2(5, 5)
 
 [physics]
 

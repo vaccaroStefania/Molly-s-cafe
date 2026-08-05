@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cue3sxn6woltq"]
+
+[ext_resource type="Texture2D" uid="uid://dxg0y5wpetukp" path="res://fondos/menu mollys cafe.jpg" id="1_5t3kx"]
+[ext_resource type="Script" uid="uid://b05wxorpgamby" path="res://scripts/menu.gd" id="1_56ah5"]
+[ext_resource type="Texture2D" uid="uid://b2tymmqmvaa4p" path="res://items/jugar trucho.png" id="2_56ah5"]
+[ext_resource type="Texture2D" uid="uid://d4bhigs7kv8mw" path="res://items/opciones trucho.png" id="3_xqndx"]
+[ext_resource type="Texture2D" uid="uid://b0fnjjvw4prra" path="res://items/creditos trucho.png" id="4_yb3qj"]
+[ext_resource type="Texture2D" uid="uid://d12gs26j7ub6o" path="res://items/molly logo.png" id="5_4gv4q"]
+
+[node name="Menu" type="Control" unique_id=1970254068]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_56ah5")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1915469588]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5t3kx")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1635410372]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.399
+anchor_top = 0.832
+anchor_right = 0.578
+anchor_bottom = 0.832
+offset_left = -298.9
+offset_top = -441.04004
+offset_right = 47.842102
+offset_bottom = -42.04004
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.19, 1.19)
+theme_override_constants/separation = 12
+
+[node name="TextureButton jugar" type="TextureButton" parent="VBoxContainer" unique_id=1694168752]
+custom_minimum_size = Vector2(250, 125)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("2_56ah5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton opciones" type="TextureButton" parent="VBoxContainer" unique_id=1176525603]
+custom_minimum_size = Vector2(250, 125)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("3_xqndx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton creditos" type="TextureButton" parent="VBoxContainer" unique_id=850175783]
+custom_minimum_size = Vector2(250, 125)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.0
+texture_normal = ExtResource("4_yb3qj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=658677475]
+position = Vector2(920, 356.00003)
+scale = Vector2(0.6682129, 0.7105712)
+texture = ExtResource("5_4gv4q")
+
+[connection signal="pressed" from="VBoxContainer/TextureButton jugar" to="." method="_on_texture_button_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer/TextureButton opciones" to="." method="_on_texture_button_opciones_pressed"]
+[connection signal="pressed" from="VBoxContainer/TextureButton creditos" to="." method="_on_texture_button_creditos_pressed"]
