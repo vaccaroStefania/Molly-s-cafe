@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dg8gc8603f5u4"]
+
+[ext_resource type="Script" uid="uid://bwl24k3gucl2m" path="res://scripts/clientes.gd" id="1_f4ymi"]
+[ext_resource type="Texture2D" uid="uid://dxi8lx27rol5t" path="res://items/cocinero trucho.jpg" id="2_7ji00"]
+
+[node name="Clientes" type="Node2D" unique_id=1065472625]
+script = ExtResource("1_f4ymi")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1911681155]
+position = Vector2(-285, 450)
+scale = Vector2(1.455, 1.455)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=2072749610]
+position = Vector2(3.0517578e-05, 7.5601273)
+scale = Vector2(0.49558988, 0.44965634)
+texture = ExtResource("2_7ji00")
+metadata/_edit_lock_ = true

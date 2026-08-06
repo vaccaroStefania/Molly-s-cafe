@@ -70,7 +70,7 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=658677475]
-position = Vector2(920, 356.00003)
+position = Vector2(965, 354.00003)
 scale = Vector2(0.6682129, 0.7105712)
 texture = ExtResource("5_4gv4q")
 
