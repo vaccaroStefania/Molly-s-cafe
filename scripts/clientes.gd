@@ -1,9 +1,12 @@
-extends Node2D
 class_name Cliente
+
+extends Node2D
+
+
 
 var nombre:String=""
 var dialogos:Array=["Buen día"]
-
+@onready var dialogManager = Dialogo.new()
 #estados
 var en_movimiento:bool=false
 var pedido_completo:bool=false
@@ -22,6 +25,7 @@ func cambio_destino():
 		250:
 			destino_select = ida_x
 			en_movimiento = true
+			dialogManager.crear_dialogo("Pepe", "Holaaaa.")
 		800:
 			position.x = entrada_x   # Lo teletransporto a -280 
 			destino_select = pedido_x

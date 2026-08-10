@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://b0fnjjvw4prra" path="res://items/creditos trucho.png" id="4_yb3qj"]
 [ext_resource type="Texture2D" uid="uid://d12gs26j7ub6o" path="res://items/molly logo.png" id="5_4gv4q"]
 
-[node name="Menu" type="Control" unique_id=1970254068]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1102778019]
+
+[node name="Menu" type="Control" parent="." unique_id=1970254068]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,7 +18,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_56ah5")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1915469588]
+[node name="TextureRect" type="TextureRect" parent="Menu" unique_id=1915469588]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,7 +28,7 @@ grow_vertical = 2
 texture = ExtResource("1_5t3kx")
 expand_mode = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1635410372]
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu" unique_id=1635410372]
 custom_minimum_size = Vector2(200, 60)
 layout_mode = 1
 anchors_preset = -1
@@ -43,7 +45,7 @@ grow_vertical = 2
 scale = Vector2(1.19, 1.19)
 theme_override_constants/separation = 12
 
-[node name="TextureButton jugar" type="TextureButton" parent="VBoxContainer" unique_id=1694168752]
+[node name="TextureButton jugar" type="TextureButton" parent="Menu/VBoxContainer" unique_id=1694168752]
 custom_minimum_size = Vector2(250, 125)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -51,7 +53,7 @@ texture_normal = ExtResource("2_56ah5")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextureButton opciones" type="TextureButton" parent="VBoxContainer" unique_id=1176525603]
+[node name="TextureButton opciones" type="TextureButton" parent="Menu/VBoxContainer" unique_id=1176525603]
 custom_minimum_size = Vector2(250, 125)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -59,7 +61,7 @@ texture_normal = ExtResource("3_xqndx")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextureButton creditos" type="TextureButton" parent="VBoxContainer" unique_id=850175783]
+[node name="TextureButton creditos" type="TextureButton" parent="Menu/VBoxContainer" unique_id=850175783]
 custom_minimum_size = Vector2(250, 125)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -69,11 +71,11 @@ texture_normal = ExtResource("4_yb3qj")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=658677475]
+[node name="Sprite2D" type="Sprite2D" parent="Menu" unique_id=658677475]
 position = Vector2(965, 354.00003)
 scale = Vector2(0.6682129, 0.7105712)
 texture = ExtResource("5_4gv4q")
 
-[connection signal="pressed" from="VBoxContainer/TextureButton jugar" to="." method="_on_texture_button_jugar_pressed"]
-[connection signal="pressed" from="VBoxContainer/TextureButton opciones" to="." method="_on_texture_button_opciones_pressed"]
-[connection signal="pressed" from="VBoxContainer/TextureButton creditos" to="." method="_on_texture_button_creditos_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/TextureButton jugar" to="Menu" method="_on_texture_button_jugar_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/TextureButton opciones" to="Menu" method="_on_texture_button_opciones_pressed"]
+[connection signal="pressed" from="Menu/VBoxContainer/TextureButton creditos" to="Menu" method="_on_texture_button_creditos_pressed"]

@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Molly´s Cafe"
-run/main_scene="uid://co7whs7psekw7"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+run/main_scene="uid://cue3sxn6woltq"
+config/features=PackedStringArray("4.7", "GL Compatibility")
 
 [autoload]
 
