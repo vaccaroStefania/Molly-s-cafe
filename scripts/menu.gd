@@ -2,7 +2,7 @@ extends Control
 
 #si presionamos jugar
 func _on_texture_button_jugar_pressed() -> void:
-	Globalxd.cambiar_escena("res://escenas/entrada cafe.tscn")
+	Globalxd.cambiar_escena("res://escenas/juego.tscn")
 	#get_tree().change_scene_to_file("res://escenas/entrada_cafeteria.tscn")
 
 #si presionamos opciones
