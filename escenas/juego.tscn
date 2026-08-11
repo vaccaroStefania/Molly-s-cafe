@@ -14,7 +14,8 @@ position = Vector2(528, 173)
 
 [node name="Clientes" parent="." unique_id=1065472625 instance=ExtResource("5_qnwci")]
 z_index = 3
-position = Vector2(1997, 485)
+y_sort_enabled = true
+position = Vector2(1002, 507)
 
 [node name="UI" parent="." unique_id=1461756934 instance=ExtResource("4_t4q8c")]
 layer = 5
