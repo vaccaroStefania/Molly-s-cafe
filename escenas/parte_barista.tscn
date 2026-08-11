@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://mwhx24kw8neb"]
+
+[ext_resource type="Texture2D" uid="uid://dsesklh6pqrsj" path="res://fondos/mollys mesada barista fondo.jpg" id="1_r4vvj"]
+
+[node name="parte barista" type="CanvasLayer" unique_id=1290782777]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=842011038]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_r4vvj")
+expand_mode = 1

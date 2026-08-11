@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://c47b6qf2bvpuw" path="res://items/configuracion trucho.png" id="1_ycrk4"]
 [ext_resource type="Script" uid="uid://c554805beu0ns" path="res://scripts/texture_button_configuracion.gd" id="2_0mmvk"]
+[ext_resource type="Texture2D" uid="uid://3ndyih84ji1d" path="res://items/boton izquierdo.png" id="3_1sjve"]
+[ext_resource type="Texture2D" uid="uid://blsbs2loa8f54" path="res://items/boton derecho.png" id="4_70yxu"]
 
 [node name="UI" type="CanvasLayer" unique_id=1461756934]
 
@@ -20,5 +22,34 @@ texture_normal = ExtResource("1_ycrk4")
 ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("2_0mmvk")
+
+[node name="boton izquierdo" type="TextureButton" parent="." unique_id=2042274308]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 42.0
+offset_top = -165.0
+offset_right = 222.0
+offset_bottom = -21.0
+grow_vertical = 0
+texture_normal = ExtResource("3_1sjve")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="boton derecho" type="TextureButton" parent="." unique_id=1414900059]
+anchors_preset = -1
+anchor_left = 0.97
+anchor_top = 0.95100003
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -169.0
+offset_top = -129.72003
+offset_right = -20.0
+offset_bottom = -21.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("4_70yxu")
+ignore_texture_size = true
+stretch_mode = 0
 
 [connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]

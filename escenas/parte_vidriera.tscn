@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://hmo27mxir5i7"]
+
+[ext_resource type="Texture2D" uid="uid://ceddhfriskqbu" path="res://fondos/vidriera.jpg" id="1_ngotc"]
+
+[node name="parte vidriera" type="CanvasLayer" unique_id=1413800087]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1365077919]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ngotc")
+expand_mode = 1
