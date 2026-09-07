@@ -15,4 +15,3 @@ func _on_texture_button_opciones_pressed() -> void:
 func _on_texture_button_creditos_pressed() -> void:
 	pass # Replace with function body.
 	
-#get_tree().quit() es para salir del juego

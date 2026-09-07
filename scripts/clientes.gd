@@ -2,8 +2,14 @@ class_name Cliente
 
 extends Node2D
 
+@onready var entrada_cafe=$"../entrada cafe"
 
-
+func visibilidad():
+	if entrada_cafe.visible==true:
+		visible=true
+	else:
+		visible=false
+	
 var nombre:String=""
 var dialogos:Array=["Buen día"]
 @onready var dialogManager = Dialogo.new()
@@ -41,3 +47,4 @@ func _process(delta: float) -> void:
 			
 			if destino_select == pedido_x and pedido_completo:
 				cambio_destino()
+				

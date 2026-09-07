@@ -1,16 +1,26 @@
 [gd_scene format=3 uid="uid://bn41n5dodiu36"]
 
+[ext_resource type="Script" uid="uid://vkuw4y6cgqdg" path="res://scripts/juego.gd" id="1_j5whg"]
 [ext_resource type="PackedScene" uid="uid://c13akj50dachp" path="res://escenas/entrada cafe.tscn" id="1_mf1lf"]
+[ext_resource type="PackedScene" uid="uid://mwhx24kw8neb" path="res://escenas/parte_barista.tscn" id="1_qnwci"]
+[ext_resource type="PackedScene" uid="uid://hmo27mxir5i7" path="res://escenas/parte_vidriera.tscn" id="2_j5whg"]
 [ext_resource type="PackedScene" uid="uid://bwpkgfbdphufp" path="res://escenas/UI.tscn" id="4_t4q8c"]
 [ext_resource type="PackedScene" uid="uid://dg8gc8603f5u4" path="res://escenas/clientes.tscn" id="5_qnwci"]
 
 [node name="juego" type="Node2D" unique_id=588963493]
 position = Vector2(-528, -183)
+script = ExtResource("1_j5whg")
 
-[node name="Objetos" type="Node" parent="." unique_id=1260381740]
+[node name="parte vidriera" parent="." unique_id=1413800087 instance=ExtResource("2_j5whg")]
+visible = false
+position = Vector2(525, 185)
+
+[node name="parte barista" parent="." unique_id=1290782777 instance=ExtResource("1_qnwci")]
+visible = false
+position = Vector2(526, 185)
 
 [node name="entrada cafe" parent="." unique_id=508843322 instance=ExtResource("1_mf1lf")]
-position = Vector2(528, 173)
+position = Vector2(521, 174)
 
 [node name="Clientes" parent="." unique_id=1065472625 instance=ExtResource("5_qnwci")]
 z_index = 3

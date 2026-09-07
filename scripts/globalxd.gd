@@ -11,3 +11,5 @@ func volver_escena_anterior() -> void:
 	if escena_anterior != "":
 		get_tree().change_scene_to_file(escena_anterior)
 #fin memoria escenas
+
+#Manejo estaciones
