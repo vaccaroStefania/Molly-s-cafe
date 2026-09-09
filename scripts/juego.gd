@@ -1,5 +1,11 @@
 extends Node2D
 
+#cargando puntos del cliente
+@onready var punto_a = $"Marker2D a.global_position"
+@onready var punto_b = $"Marker2D b.global_position"
+@onready var punto_c = $"Marker2D c.global_position"
+
+
 #cargando mis noditos
 @onready var parte_vidriera = $"parte vidriera"
 @onready var parte_barista = $"parte barista"
@@ -34,3 +40,18 @@ func cambio_escena(direccion:String) -> void:
 			estaciones[i].visible=false
 			
 		
+		
+@export var cliente_scene: PackedScene
+
+func generar_nuevo_cliente():
+	var nuevo_cliente = cliente_scene.instantiate()
+	
+	# 1. Posicionarlo FUERA de pantalla de entrada
+	nuevo_cliente.global_position.x = spawn_x
+	nuevo_cliente.global_position.y = $PuntosNavegacion/Punto_Atencion.global_position.y
+	
+	# 2. Agregarlo a la escena
+	$Clientes.add_child(nuevo_cliente)
+	
+	# 3. Le ordenamos caminar hacia la barra
+	nuevo_cliente.fijar_destino(barra_x)
