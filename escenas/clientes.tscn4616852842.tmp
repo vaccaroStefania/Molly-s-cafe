@@ -5,6 +5,7 @@
 
 [node name="clientes" type="CharacterBody2D" unique_id=1320617686]
 script = ExtResource("1_f4ymi")
+velocidad_caminata = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2072749610]
 scale = Vector2(0.7210833, 0.65424997)
