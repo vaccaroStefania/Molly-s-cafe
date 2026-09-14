@@ -37,6 +37,7 @@ position = Vector2(521, 174)
 z_index = 3
 y_sort_enabled = true
 position = Vector2(2270, 518)
+velocidad_caminata = 150.0
 
 [node name="UI" parent="." unique_id=1461756934 instance=ExtResource("4_t4q8c")]
 layer = 5

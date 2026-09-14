@@ -9,7 +9,7 @@ extends Node2D
 #cargando mis noditos
 @onready var parte_vidriera = $"parte vidriera"
 @onready var parte_barista = $"parte barista"
-@onready var entrada_cafe = $"entrada cafe"
+@onready var entrada_cafe = $"entrada_cafe" # O $"entrada_cafe" si tiene guión
 @onready var clientes = $"clientes"
 
 	
@@ -19,7 +19,7 @@ var indice_actual: int = 0
 func _ready() -> void:
 	estaciones = [entrada_cafe, parte_barista, parte_vidriera]
 	
-	await get_tree().create_timer(10.0).timeout
+	await get_tree().create_timer(5.0).timeout
 	generar_nuevo_cliente()
 
 func cambio_escena(direccion:String) -> void:
@@ -34,11 +34,17 @@ func cambio_escena(direccion:String) -> void:
 		indice_actual=estaciones.size()-1
 		
 	for i in range(estaciones.size()):
-		if i==indice_actual:
-			estaciones[i].visible=true
-		else:
-			estaciones[i].visible=false
-			
+		if estaciones[i] != null:
+			if i==indice_actual:
+				estaciones[i].visible=true
+			else:
+				estaciones[i].visible=false
+				
+	#esto es para el cliente no se vea en las otras partes de la cafeteria :b
+	if estaciones[indice_actual] == entrada_cafe:
+		$clientes.visible = true
+	else:
+		$clientes.visible = false
 		
 		
 @export var cliente_scene: PackedScene

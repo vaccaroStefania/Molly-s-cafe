@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://mwhx24kw8neb"]
 
 [ext_resource type="Texture2D" uid="uid://dsesklh6pqrsj" path="res://fondos/mollys mesada barista fondo.jpg" id="1_r4vvj"]
+[ext_resource type="Texture2D" uid="uid://ckh1e126w2bns" path="res://items/cafetera.png" id="2_4xpjn"]
+[ext_resource type="Texture2D" uid="uid://dt8uokbudsuca" path="res://items/licuadora.png" id="3_45lpo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_co5b0"]
+size = Vector2(203, 300.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eob8x"]
+size = Vector2(228.69891, 521.09644)
 
 [node name="parte barista" type="Node2D" unique_id=1264122613]
 
@@ -15,3 +23,28 @@ grow_vertical = 2
 mouse_filter = 2
 texture = ExtResource("1_r4vvj")
 expand_mode = 1
+
+[node name="cafetera" type="Area2D" parent="." unique_id=1536054487]
+position = Vector2(-56, -2)
+
+[node name="Sprite2D" type="Sprite2D" parent="cafetera" unique_id=1265896442]
+position = Vector2(295.99997, 416.24997)
+scale = Vector2(0.65999997, 0.6590277)
+texture = ExtResource("2_4xpjn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cafetera" unique_id=195472472]
+position = Vector2(295.5, 437.25)
+shape = SubResource("RectangleShape2D_co5b0")
+
+[node name="licuadora" type="Area2D" parent="." unique_id=1522705695]
+position = Vector2(610, 404)
+scale = Vector2(0.71272725, 0.7125)
+
+[node name="Sprite2D" type="Sprite2D" parent="licuadora" unique_id=1924798844]
+position = Vector2(-7.015297, 1.9073486e-05)
+scale = Vector2(0.8469388, 0.9580896)
+texture = ExtResource("3_45lpo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="licuadora" unique_id=923995643]
+position = Vector2(-44.19641, -35.592163)
+shape = SubResource("RectangleShape2D_eob8x")

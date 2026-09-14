@@ -2,7 +2,6 @@ class_name Cliente
 
 extends CharacterBody2D
 
-@onready var entrada_cafe = $entrada_cafe
 
 @onready var sprite = $Sprite2D
 
@@ -35,9 +34,3 @@ func movimiento_cliente() -> void:
 		velocity.x = 0
 		global_position.x = destino_x
 		caminando = false 
-
-func visibilidad():
-	if entrada_cafe.visible == true:
-		visible = true
-	else:
-		visible = false
