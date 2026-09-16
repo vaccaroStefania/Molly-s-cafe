@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://8ocqq0wqw53c"]
+
+[ext_resource type="Texture2D" uid="uid://dxyctcry45roh" path="res://items_barista/licuadora base parte delantera.png" id="1_0llro"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qsm5h"]
+
+[node name="licuadora" type="Node2D" unique_id=1069980487]
+
+[node name="licuadora_base" type="Area2D" parent="." unique_id=1924622534]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="licuadora_base" unique_id=1464553041]
+shape = SubResource("RectangleShape2D_qsm5h")
+
+[node name="Sprite2D" type="Sprite2D" parent="licuadora_base" unique_id=1331114813]
+texture = ExtResource("1_0llro")

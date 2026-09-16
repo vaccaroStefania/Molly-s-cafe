@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://mwhx24kw8neb" path="res://escenas/parte_barista.tscn" id="1_qnwci"]
 [ext_resource type="PackedScene" uid="uid://hmo27mxir5i7" path="res://escenas/parte_vidriera.tscn" id="2_j5whg"]
 [ext_resource type="PackedScene" uid="uid://bwpkgfbdphufp" path="res://escenas/UI.tscn" id="4_t4q8c"]
+[ext_resource type="PackedScene" uid="uid://dwmvqepj8xgi0" path="res://escenas/modo_cafetera.tscn" id="5_qk6os"]
 [ext_resource type="PackedScene" uid="uid://dg8gc8603f5u4" path="res://escenas/clientes.tscn" id="5_qnwci"]
 
 [node name="juego" type="Node2D" unique_id=588963493]
@@ -29,6 +30,9 @@ position = Vector2(525, 185)
 [node name="parte barista" parent="." unique_id=1290782777 instance=ExtResource("1_qnwci")]
 visible = false
 position = Vector2(526, 185)
+
+[node name="modo_cafetera" parent="parte barista" unique_id=2076645844 instance=ExtResource("5_qk6os")]
+visible = false
 
 [node name="entrada_cafe" parent="." unique_id=508843322 instance=ExtResource("1_mf1lf")]
 position = Vector2(521, 174)

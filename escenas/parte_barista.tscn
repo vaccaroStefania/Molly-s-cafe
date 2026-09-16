@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://mwhx24kw8neb"]
 
+[ext_resource type="Script" uid="uid://bgvfjmvwhsun4" path="res://scripts/parte_barista.gd" id="1_cbh4l"]
 [ext_resource type="Texture2D" uid="uid://dsesklh6pqrsj" path="res://fondos/mollys mesada barista fondo.jpg" id="1_r4vvj"]
 [ext_resource type="Texture2D" uid="uid://ckh1e126w2bns" path="res://items/cafetera.png" id="2_4xpjn"]
 [ext_resource type="Texture2D" uid="uid://dt8uokbudsuca" path="res://items/licuadora.png" id="3_45lpo"]
+[ext_resource type="Texture2D" uid="uid://fxcyx48a8fn7" path="res://items/pava.png" id="4_t6gr5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_co5b0"]
 size = Vector2(203, 300.5)
@@ -10,7 +12,11 @@ size = Vector2(203, 300.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eob8x"]
 size = Vector2(228.69891, 521.09644)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qcnco"]
+size = Vector2(197, 249)
+
 [node name="parte barista" type="Node2D" unique_id=1264122613]
+script = ExtResource("1_cbh4l")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=842011038]
 anchors_preset = 15
@@ -48,3 +54,18 @@ texture = ExtResource("3_45lpo")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="licuadora" unique_id=923995643]
 position = Vector2(-44.19641, -35.592163)
 shape = SubResource("RectangleShape2D_eob8x")
+
+[node name="pava" type="Area2D" parent="." unique_id=1485102949]
+
+[node name="Sprite2D" type="Sprite2D" parent="pava" unique_id=1556528342]
+position = Vector2(964.00006, 435)
+scale = Vector2(0.52000004, 0.5486111)
+texture = ExtResource("4_t6gr5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pava" unique_id=1908982065]
+position = Vector2(934.5, 444.5)
+shape = SubResource("RectangleShape2D_qcnco")
+
+[connection signal="input_event" from="cafetera" to="." method="_on_cafetera_input_event"]
+[connection signal="input_event" from="licuadora" to="." method="_on_licuadora_input_event"]
+[connection signal="input_event" from="pava" to="." method="_on_area_2d_input_event"]

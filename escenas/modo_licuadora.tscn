@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cqmdw28wayec4"]
+
+[ext_resource type="Texture2D" uid="uid://c0oervt2wvmda" path="res://fondos/fondo modo licuadora.png" id="1_rc0gd"]
+
+[node name="modo_licuadora" type="Node2D" unique_id=960886751]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=317131363]
+offset_right = 1100.0
+offset_bottom = 720.0
+texture = ExtResource("1_rc0gd")

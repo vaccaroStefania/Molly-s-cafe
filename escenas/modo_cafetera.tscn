@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dwmvqepj8xgi0"]
+
+[ext_resource type="Texture2D" uid="uid://fsw64cagvwld" path="res://fondos/fondo modo cafetera.png" id="1_ex3pv"]
+[ext_resource type="PackedScene" uid="uid://c747dvt2003ga" path="res://escena objetos/cafetera.tscn" id="2_lmudp"]
+
+[node name="modo_cafetera" type="Node2D" unique_id=2076645844]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1424200572]
+offset_right = 1100.0
+offset_bottom = 720.0
+texture = ExtResource("1_ex3pv")
+
+[node name="cafetera" parent="." unique_id=1650988502 instance=ExtResource("2_lmudp")]
+position = Vector2(549, 379)
+scale = Vector2(1.275, 1.275)

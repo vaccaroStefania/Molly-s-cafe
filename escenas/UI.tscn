@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bwpkgfbdphufp"]
 
+[ext_resource type="Script" uid="uid://dyvoarq4vat1i" path="res://scripts/ui.gd" id="1_l52yy"]
 [ext_resource type="Texture2D" uid="uid://c47b6qf2bvpuw" path="res://items/configuracion trucho.png" id="1_ycrk4"]
 [ext_resource type="Script" uid="uid://c554805beu0ns" path="res://scripts/texture_button_configuracion.gd" id="2_0mmvk"]
 [ext_resource type="Texture2D" uid="uid://3ndyih84ji1d" path="res://items/boton izquierdo.png" id="3_1sjve"]
@@ -8,8 +9,9 @@
 [ext_resource type="Script" uid="uid://bt5mgtv1qc2fk" path="res://scripts/boton_derecho.gd" id="5_70yxu"]
 
 [node name="UI" type="CanvasLayer" unique_id=1461756934]
+script = ExtResource("1_l52yy")
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=1175045727]
+[node name="configuracion" type="TextureButton" parent="." unique_id=1175045727]
 top_level = true
 z_index = 15
 anchors_preset = -1
@@ -56,7 +58,7 @@ ignore_texture_size = true
 stretch_mode = 0
 script = ExtResource("5_70yxu")
 
-[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
-[connection signal="pressed" from="boton izquierdo" to="TextureButton" method="_on_boton_izquierdo_pressed"]
+[connection signal="pressed" from="configuracion" to="configuracion" method="_on_pressed"]
+[connection signal="pressed" from="boton izquierdo" to="configuracion" method="_on_boton_izquierdo_pressed"]
 [connection signal="pressed" from="boton izquierdo" to="boton izquierdo" method="_on_pressed"]
 [connection signal="pressed" from="boton derecho" to="boton derecho" method="_on_pressed"]

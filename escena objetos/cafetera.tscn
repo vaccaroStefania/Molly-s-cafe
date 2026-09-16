@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c747dvt2003ga"]
+
+[ext_resource type="Script" uid="uid://bvll4m4pibbea" path="res://scripts/cafetera.gd" id="1_ikldh"]
+[ext_resource type="Texture2D" uid="uid://hnutgyjma7kt" path="res://items_barista/cafera base.png" id="2_es6c7"]
+[ext_resource type="Texture2D" uid="uid://bcldwp1sfa3d7" path="res://items_barista/portafiltro base.png" id="3_07j6r"]
+
+[sub_resource type="BitMap" id="BitMap_co5b0"]
+
+[node name="cafetera" type="Node2D" unique_id=1650988502]
+script = ExtResource("1_ikldh")
+
+[node name="cafetera_base" type="Area2D" parent="." unique_id=1052949751]
+
+[node name="Sprite2D" type="Sprite2D" parent="cafetera_base" unique_id=1872038889]
+texture = ExtResource("2_es6c7")
+
+[node name="portafiltro" type="TextureButton" parent="." unique_id=847438778]
+offset_left = -554.0
+offset_top = -363.0
+offset_right = 546.0
+offset_bottom = 357.0
+texture_normal = ExtResource("3_07j6r")
+texture_click_mask = SubResource("BitMap_co5b0")
