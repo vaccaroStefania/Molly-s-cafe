@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bwpkgfbdphufp" path="res://escenas/UI.tscn" id="4_t4q8c"]
 [ext_resource type="PackedScene" uid="uid://dwmvqepj8xgi0" path="res://escenas/modo_cafetera.tscn" id="5_qk6os"]
 [ext_resource type="PackedScene" uid="uid://dg8gc8603f5u4" path="res://escenas/clientes.tscn" id="5_qnwci"]
+[ext_resource type="Script" uid="uid://cexw6jvnamtk8" path="res://scripts/manejo_pedidos.gd" id="8_n5myf"]
 
 [node name="juego" type="Node2D" unique_id=588963493]
 position = Vector2(-528, -183)
@@ -45,3 +46,6 @@ velocidad_caminata = 150.0
 
 [node name="UI" parent="." unique_id=1461756934 instance=ExtResource("4_t4q8c")]
 layer = 5
+
+[node name="Manejopedidos" type="Node" parent="." unique_id=1165993536]
+script = ExtResource("8_n5myf")

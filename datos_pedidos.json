@@ -1,47 +1,47 @@
 {
-    "categorias de consumo":{
-        "bebible":{
-            "cafetera":{
+	"categorias de consumo":{
+		"bebible":{
+			"cafetera":{
 
-                "tipo":"cafe",
+				"tipo":"cafe",
 
-                "nombre":["expresso","cortado doble","lágrima","americano","machiatto","cappuchino","café con leche"],
+				"nombre":["expresso","cortado doble","lágrima","americano","machiatto","cappuchino","café con leche"],
 
-                "ingredientes_base":
-                [{"nombre":"cafe","cantidad":" vasos"},
-                {"nombre":"leche","cantidad":" vasos"}],
+				"ingredientes_base":
+				[{"nombre":"cafe","cantidad":" vasos"},
+				{"nombre":"leche","cantidad":" vasos"}],
 
-                "toppings":[{"nombre":"crema","cantidad":" cucharadas"},
-                {"nombre":"canela","cantidad":" cucharadas"}]
-            },
+				"toppings":[{"nombre":"crema","cantidad":" cucharadas"},
+				{"nombre":"canela","cantidad":" cucharadas"}]
+			},
 
-            "licuadora":{
+			"licuadora":{
 
-                "tipo":"licuado",
+				"tipo":"licuado",
 
-                "nombre":["frappé","licuado de agua","licuado de leche"],
+				"nombre":["frappé","licuado de agua","licuado de leche"],
 
-                "ingredientes_base":[{"nombre":"agua","cantidad":"vasos"},
-                {"nombre":"leche","cantidad":" vasos"},{"nombre":"cubitos de hielo","cantidad":" unidad"}],
+				"ingredientes_base":[{"nombre":"agua","cantidad":"vasos"},
+				{"nombre":"leche","cantidad":" vasos"},{"nombre":"cubitos de hielo","cantidad":" unidad"}],
 
-                "sabores":[{"nombre":"frutilla","cantidad":" unidad"},{"nombre":"banana","cantidad":" unidad"},{"nombre":"durazno","cantidad":" unidad"},{"nombre":"chocolate","cantidad":" unidad"},{"nombre":"helado de vainilla","cantidad":" cucharadas"},
-                {"nombre":"cafe","cantidad":" vasos"}],
+				"sabores":[{"nombre":"frutilla","cantidad":" unidad"},{"nombre":"banana","cantidad":" unidad"},{"nombre":"durazno","cantidad":" unidad"},{"nombre":"chocolate","cantidad":" unidad"},{"nombre":"helado de vainilla","cantidad":" cucharadas"},
+				{"nombre":"cafe","cantidad":" vasos"}],
 
-                "toppings":[{"nombre":"crema","cantidad":" cucharadas"},
-                {"nombre":"helado","cantidad":" cucharadas"},{"nombre":"frutilla","cantidad":" unidad"},{"nombre":"cereza","cantidad":" unidad"},{"nombre":"chispitas de colores","cantidad":" cucharadas"},
-                {"nombre":"chispitas de chocolate","cantidad":" cucharadas"},
-                {"nombre":"galletita","cantidad":" cucharadas"}]
-            },
+				"toppings":[{"nombre":"crema","cantidad":" cucharadas"},
+				{"nombre":"helado","cantidad":" cucharadas"},{"nombre":"frutilla","cantidad":" unidad"},{"nombre":"cereza","cantidad":" unidad"},{"nombre":"chispitas de colores","cantidad":" cucharadas"},
+				{"nombre":"chispitas de chocolate","cantidad":" cucharadas"},
+				{"nombre":"galletita","cantidad":" cucharadas"}]
+			},
 
-            "pava":{
-                "tipo":"té",
+			"pava":{
+				"tipo":"té",
 
-                "nombre":"té",
+				"nombre":"té",
 
-                "ingredientes_base":[{"nombre":"agua","cantidad":"vasos"}],
+				"ingredientes_base":[{"nombre":"agua","cantidad":"vasos"}],
 
-                "sabores":["frutilla","negro","matcha","limón","menta","durazno"]
-            }
-        }
-    }
+				"sabores":["frutilla","negro","matcha","limón","menta","durazno"]
+			}
+		}
+	}
 }
