@@ -2,11 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dyvoarq4vat1i" path="res://scripts/ui.gd" id="1_l52yy"]
 [ext_resource type="Texture2D" uid="uid://c47b6qf2bvpuw" path="res://items/configuracion trucho.png" id="1_ycrk4"]
-[ext_resource type="Script" uid="uid://c554805beu0ns" path="res://scripts/texture_button_configuracion.gd" id="2_0mmvk"]
 [ext_resource type="Texture2D" uid="uid://3ndyih84ji1d" path="res://items/boton izquierdo.png" id="3_1sjve"]
-[ext_resource type="Script" uid="uid://cohmq6gjttlai" path="res://scripts/boton_izquierdo.gd" id="4_8wiwu"]
 [ext_resource type="Texture2D" uid="uid://blsbs2loa8f54" path="res://items/boton derecho.png" id="4_70yxu"]
-[ext_resource type="Script" uid="uid://bt5mgtv1qc2fk" path="res://scripts/boton_derecho.gd" id="5_70yxu"]
 
 [node name="UI" type="CanvasLayer" unique_id=1461756934]
 script = ExtResource("1_l52yy")
@@ -25,7 +22,6 @@ offset_bottom = 40.92
 texture_normal = ExtResource("1_ycrk4")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("2_0mmvk")
 
 [node name="boton izquierdo" type="TextureButton" parent="." unique_id=2042274308]
 anchors_preset = 2
@@ -39,7 +35,6 @@ grow_vertical = 0
 texture_normal = ExtResource("3_1sjve")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("4_8wiwu")
 
 [node name="boton derecho" type="TextureButton" parent="." unique_id=1414900059]
 anchors_preset = -1
@@ -56,7 +51,6 @@ grow_vertical = 0
 texture_normal = ExtResource("4_70yxu")
 ignore_texture_size = true
 stretch_mode = 0
-script = ExtResource("5_70yxu")
 
 [connection signal="pressed" from="configuracion" to="configuracion" method="_on_pressed"]
 [connection signal="pressed" from="boton izquierdo" to="configuracion" method="_on_boton_izquierdo_pressed"]
