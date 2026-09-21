@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://mwhx24kw8neb"]
 
-[ext_resource type="Script" uid="uid://bgvfjmvwhsun4" path="res://scripts/parte_barista.gd" id="1_cbh4l"]
+[ext_resource type="Script" uid="uid://bgvfjmvwhsun4" path="res://scripts_escenas/parte_barista.gd" id="1_cbh4l"]
 [ext_resource type="Texture2D" uid="uid://dsesklh6pqrsj" path="res://fondos/mollys mesada barista fondo.jpg" id="1_r4vvj"]
 [ext_resource type="Texture2D" uid="uid://ckh1e126w2bns" path="res://items/cafetera.png" id="2_4xpjn"]
 [ext_resource type="Texture2D" uid="uid://dt8uokbudsuca" path="res://items/licuadora.png" id="3_45lpo"]

@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://dg8gc8603f5u4"]
 
-[ext_resource type="Script" uid="uid://bwl24k3gucl2m" path="res://scripts/clientes.gd" id="1_f4ymi"]
+[ext_resource type="Script" uid="uid://bwl24k3gucl2m" path="res://scripts_escenas/clientes.gd" id="1_f4ymi"]
 [ext_resource type="Texture2D" uid="uid://dxi8lx27rol5t" path="res://items/cocinero trucho.jpg" id="2_7ji00"]
 
 [node name="clientes" type="CharacterBody2D" unique_id=1320617686]
 script = ExtResource("1_f4ymi")
-velocidad_caminata = null
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2072749610]
 scale = Vector2(0.7210833, 0.65424997)

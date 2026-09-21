@@ -11,5 +11,5 @@ offset_bottom = 720.0
 texture = ExtResource("1_ex3pv")
 
 [node name="cafetera" parent="." unique_id=1650988502 instance=ExtResource("2_lmudp")]
-position = Vector2(549, 379)
+position = Vector2(371.99997, 346)
 scale = Vector2(1.275, 1.275)

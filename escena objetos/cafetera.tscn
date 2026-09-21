@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c747dvt2003ga"]
 
-[ext_resource type="Script" uid="uid://bvll4m4pibbea" path="res://scripts/cafetera.gd" id="1_ikldh"]
+[ext_resource type="Script" uid="uid://bvll4m4pibbea" path="res://scripts_escenas/cafetera.gd" id="1_ikldh"]
 [ext_resource type="Texture2D" uid="uid://hnutgyjma7kt" path="res://items_barista/cafera base.png" id="2_es6c7"]
 [ext_resource type="Texture2D" uid="uid://bcldwp1sfa3d7" path="res://items_barista/portafiltro base.png" id="3_07j6r"]
 

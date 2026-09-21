@@ -17,3 +17,8 @@ func _on_boton_derecho_pressed():
 	var nodo_juego = get_tree().current_scene
 	if nodo_juego.has_method("cambio_escena"):
 		nodo_juego.cambio_escena("derecha")
+		
+func _on_configuracion_pressed() -> void:
+	Globalxd.cambiar_escena("res://escenas/opciones.tscn")
+	
+	

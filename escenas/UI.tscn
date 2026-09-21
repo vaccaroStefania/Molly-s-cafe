@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://bwpkgfbdphufp"]
 
-[ext_resource type="Script" uid="uid://dyvoarq4vat1i" path="res://scripts/ui.gd" id="1_l52yy"]
+[ext_resource type="Script" uid="uid://dyvoarq4vat1i" path="res://scripts_escenas/ui.gd" id="1_l52yy"]
 [ext_resource type="Texture2D" uid="uid://c47b6qf2bvpuw" path="res://items/configuracion trucho.png" id="1_ycrk4"]
 [ext_resource type="Texture2D" uid="uid://3ndyih84ji1d" path="res://items/boton izquierdo.png" id="3_1sjve"]
 [ext_resource type="Texture2D" uid="uid://blsbs2loa8f54" path="res://items/boton derecho.png" id="4_70yxu"]
+[ext_resource type="PackedScene" uid="uid://bomirg4fyu6f3" path="res://escena objetos/anotador.tscn" id="5_70yxu"]
 
 [node name="UI" type="CanvasLayer" unique_id=1461756934]
 script = ExtResource("1_l52yy")
+
+[node name="anotador" parent="." unique_id=1147602298 instance=ExtResource("5_70yxu")]
+position = Vector2(890, 360)
 
 [node name="configuracion" type="TextureButton" parent="." unique_id=1175045727]
 top_level = true
@@ -52,6 +56,7 @@ texture_normal = ExtResource("4_70yxu")
 ignore_texture_size = true
 stretch_mode = 0
 
+[connection signal="pressed" from="configuracion" to="." method="_on_configuracion_pressed"]
 [connection signal="pressed" from="configuracion" to="configuracion" method="_on_pressed"]
 [connection signal="pressed" from="boton izquierdo" to="configuracion" method="_on_boton_izquierdo_pressed"]
 [connection signal="pressed" from="boton izquierdo" to="boton izquierdo" method="_on_pressed"]

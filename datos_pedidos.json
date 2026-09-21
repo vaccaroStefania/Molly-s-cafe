@@ -35,8 +35,8 @@
 
 			"pava":{
 				"tipo":"té",
-
-				"nombre":"té",
+				
+				"nombre":["té de frutilla", "té negro", "té matcha", "té de limón", "té de menta", "té de durazno"],
 
 				"ingredientes_base":[{"nombre":"agua","cantidad":"vasos"}],
 

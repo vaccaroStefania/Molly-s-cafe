@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cab0btnk2gctv"]
 
 [ext_resource type="Texture2D" uid="uid://dxg0y5wpetukp" path="res://fondos/menu mollys cafe.jpg" id="1_4n5yr"]
-[ext_resource type="Script" uid="uid://ce3yp7phkp4hu" path="res://scripts/opciones.gd" id="1_os4os"]
+[ext_resource type="Script" uid="uid://ce3yp7phkp4hu" path="res://scripts_escenas/opciones.gd" id="1_os4os"]
 [ext_resource type="Texture2D" uid="uid://crignxqv48jjc" path="res://items/volumen trucho.png" id="2_chcw5"]
 [ext_resource type="Texture2D" uid="uid://cmh8d4hr1ndym" path="res://items/atras trucho.png" id="3_os4os"]
 [ext_resource type="Texture2D" uid="uid://d12gs26j7ub6o" path="res://items/molly logo.png" id="4_chcw5"]

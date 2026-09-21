@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bomirg4fyu6f3"]
+
+[ext_resource type="Script" uid="uid://c43ev8rgmdwbm" path="res://scripts_generales/anotador.gd" id="1_qtrr2"]
+[ext_resource type="Texture2D" uid="uid://dmyret4774en1" path="res://items_barista/anotador 2.png" id="2_qtrr2"]
+[ext_resource type="FontFile" uid="uid://dxh1gyvuhegqg" path="res://items/IndieFlower-Regular.ttf" id="3_ln7gw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_co5b0"]
+size = Vector2(135, 721)
+
+[sub_resource type="LabelSettings" id="LabelSettings_wwyxh"]
+font = ExtResource("3_ln7gw")
+font_size = 25
+font_color = Color(0.9098039, 0.1882353, 0, 1)
+shadow_size = 4
+shadow_color = Color(0, 0, 0, 0.1882353)
+
+[node name="anotador" type="Node2D" unique_id=1147602298]
+script = ExtResource("1_qtrr2")
+
+[node name="anotador_area" type="Area2D" parent="." unique_id=1915250274]
+
+[node name="Sprite2D" type="Sprite2D" parent="anotador_area" unique_id=1371200265]
+texture = ExtResource("2_qtrr2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="anotador_area" unique_id=758341978]
+position = Vector2(-213.5, 1.5)
+shape = SubResource("RectangleShape2D_co5b0")
+
+[node name="titulo" type="Label" parent="." unique_id=1375818543]
+offset_left = -97.00001
+offset_top = -243.00002
+offset_right = 137.0
+offset_bottom = -205.00002
+rotation = 0.034906585
+text = "Aún no tienes pedidos"
+label_settings = SubResource("LabelSettings_wwyxh")
+
+[node name="contenedor_pedidos" type="VBoxContainer" parent="." unique_id=1385606268]
+offset_left = -121.62711
+offset_top = -198.67819
+offset_right = 152.01132
+offset_bottom = 167.37827
+rotation = 0.034906585
+
+[connection signal="input_event" from="anotador_area" to="." method="_on_anotador_area_input_event"]

@@ -42,11 +42,16 @@ func pedir_algo() -> void:
 	if ya_pidio:
 		return
 		
-	var sistema_pedidos = get_node("/root/juego/Manejopedidos")
+	var manejo_pedidos = get_node("/root/juego/Manejopedidos")
+	var anotador = get_node("/root/juego/UI/anotador") #le doy a anotador el valor del nodo anotador
 	
-	if sistema_pedidos:
-		pedido_actual = sistema_pedidos.generar_pedido_aleatorio()
+	if manejo_pedidos:
+		pedido_actual = manejo_pedidos.generar_pedido_aleatorio()
 		print("Hola papu dame un: ", pedido_actual)
 		
+		# Agregamos el texto al anotador en tiempo real
+		if anotador:
+			anotador.agregar_pedido(pedido_actual) #llamo a la función de anotador
 		
 		ya_pidio = true
+		

@@ -40,7 +40,6 @@ func cambio_escena(direccion:String) -> void:
 			else:
 				estaciones[i].visible=false
 				
-	#esto es para el cliente no se vea en las otras partes de la cafeteria :b
 	if estaciones[indice_actual] == entrada_cafe:
 		$clientes.visible = true
 	else:
