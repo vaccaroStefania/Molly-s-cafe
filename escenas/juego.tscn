@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bwpkgfbdphufp" path="res://escenas/UI.tscn" id="4_t4q8c"]
 [ext_resource type="PackedScene" uid="uid://dwmvqepj8xgi0" path="res://escenas/modo_cafetera.tscn" id="5_qk6os"]
 [ext_resource type="PackedScene" uid="uid://dg8gc8603f5u4" path="res://escenas/clientes.tscn" id="5_qnwci"]
+[ext_resource type="PackedScene" uid="uid://cab0btnk2gctv" path="res://escenas/opciones.tscn" id="7_uf0fd"]
 [ext_resource type="Script" uid="uid://cexw6jvnamtk8" path="res://scripts_generales/manejo_pedidos.gd" id="8_n5myf"]
 
 [node name="juego" type="Node2D" unique_id=588963493]
@@ -42,6 +43,9 @@ position = Vector2(521, 174)
 z_index = 3
 y_sort_enabled = true
 position = Vector2(2270, 518)
+
+[node name="opciones_fondo" parent="." unique_id=533485657 instance=ExtResource("7_uf0fd")]
+visible = false
 
 [node name="UI" parent="." unique_id=1461756934 instance=ExtResource("4_t4q8c")]
 layer = 5

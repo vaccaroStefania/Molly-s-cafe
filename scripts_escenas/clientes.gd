@@ -9,6 +9,7 @@ var caminando: bool = false
 var velocidad: float = 200.0
 
 var pedido_actual: String = "" 
+var pedidos: Array=[]
 
 var ya_pidio: bool = false 
 
@@ -46,12 +47,13 @@ func pedir_algo() -> void:
 	var anotador = get_node("/root/juego/UI/anotador") #le doy a anotador el valor del nodo anotador
 	
 	if manejo_pedidos:
-		pedido_actual = manejo_pedidos.generar_pedido_aleatorio()
-		print("Hola papu dame un: ", pedido_actual)
+		pedidos= manejo_pedidos.generar_pedido_aleatorio()
+		print("Hola papu dame un: ", pedidos)
 		
 		# Agregamos el texto al anotador en tiempo real
 		if anotador:
-			anotador.agregar_pedido(pedido_actual) #llamo a la función de anotador
+			for pedido_actual in pedidos:
+				anotador.agregar_pedido(pedido_actual) #llamo a la función de anotador
 		
 		ya_pidio = true
 		

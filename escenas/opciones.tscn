@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cmh8d4hr1ndym" path="res://items/atras trucho.png" id="3_os4os"]
 [ext_resource type="Texture2D" uid="uid://d12gs26j7ub6o" path="res://items/molly logo.png" id="4_chcw5"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=533485657]
+[node name="opciones_fondo" type="CanvasLayer" unique_id=533485657]
 
 [node name="opciones" type="Control" parent="." unique_id=2048066652]
 layout_mode = 3

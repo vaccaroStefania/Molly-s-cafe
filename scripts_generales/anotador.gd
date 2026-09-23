@@ -48,7 +48,7 @@ func agregar_pedido(texto_pedido:String) ->void:
 	nuevo_label.text="* "+texto_pedido #contenido de mi label
 	
 	nuevo_label.add_theme_color_override("font_color", Color("e83000")) # estilo texto
-	nuevo_label.add_theme_font_size_override("font_size", 20)
+	nuevo_label.add_theme_font_size_override("font_size", 30)
 	nuevo_label.add_theme_font_override("font", MI_FUENTE)
 	
 	contenedor_pedidos.add_child(nuevo_label) #guardo el label en el contenedor
